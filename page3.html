@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Add Country</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app2.js"></script>
+</head>
+<body ng-controller="myCtrl">
+    <h1>Список країн</h1>
+    <ul>
+        <li ng-repeat="country in countries">
+            {{country}}
+        </li>
+    </ul>
+
+    <h1>Додати країну</h1>
+    <input type="text" ng-model="newCountry" ng-blur="addCountry()">
+    <a href="index.html">На головну</a>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app1.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <label for="numberInput">Введіть число:</label>
+        <input type="number" id="numberInput" ng-model="number">
+        <p ng-if="number">Квадрат числа {{number}} дорівнює {{number * number}}</p>
+    </div>
+    <a href="index.html">На головну</a>
+</body>
+</html>
